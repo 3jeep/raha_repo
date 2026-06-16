@@ -1,0 +1,75 @@
+name: raha_hr
+description: >
+  منصة رقمية متقدمة لإدارة الموارد البشرية وتقديم الحلول الذكية المتكاملة
+  لدعم قطاع الخدمات والعمالة بالسودان.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.0.7
+  rxdart: ^0.27.7 
+  flutter_localizations:
+    sdk: flutter
+
+  # المكتبات الأساسية لفايربيز
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.17.5
+  
+  # 🚀 المكتبة الجديدة المضافة بدون تحديد إصدار ليحل فلوتر التعارض تلقائياً
+  firebase_storage:
+  
+  # مكتبة الرسائل والإشعارات
+  firebase_messaging: ^14.9.4
+  flutter_local_notifications: ^17.0.0
+
+  # مكتبات إرسال الإشعارات (FCM V1) والتوثيق
+  http: ^1.1.0
+  googleapis_auth: ^1.4.1
+
+  # المكتبات الإضافية 
+  google_sign_in: ^6.1.5
+  google_fonts: ^6.1.0
+  url_launcher: ^6.2.0
+  
+  # التوقيت واللغات
+  intl: ^0.20.2
+  
+  # المواقع والخرائط الأصيلة (Native)
+  geolocator: ^10.1.0
+  geocoding: ^3.0.0 
+  google_maps_flutter: ^2.5.3
+
+  # المكتبة الجديدة الأساسية لحفظ موقع المستخدم محلياً لفتح الخريطة فوراً
+  shared_preferences: ^2.2.2
+  
+  # مكتبة التوقيع
+  syncfusion_flutter_signaturepad: ^21.1.35
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # تعريف الخطوط العربية المضافة
+  fonts:
+    - family: Aljazeera
+      fonts:
+        - asset: assets/fonts/Aljazeera.ttf
+    - family: ArabicFont
+      fonts:
+        - asset: assets/fonts/Ar.ttf
+
+  assets:
+    - assets/images/hero_bg.jpg
+    - assets/images/logo.png
+    - assets/service-account.json
